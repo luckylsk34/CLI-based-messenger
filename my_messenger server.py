@@ -1,6 +1,6 @@
 """threading is used since we need take input for sending
    and listen on the recieving socket for the message and
-   these both need to be done simultaneously, hence 
+   these both need to be done simultaneously, hence
    threading"""
 
 
@@ -56,13 +56,13 @@ def recieving():
 		if n == 0:
 			n = 1
 			w.cursor_adjust(1-pos.X, 0)
-			print('                                                                                                    ')
+			print('                                                                                                    ', end = '\r')
 			print('other:', msg1.decode('ascii'))
 			print('\nyou: ', end = '')
 		else:
 			w.cursor_adjust(1-pos.X, -1)
 			print('other:', msg1.decode('ascii'))
-			print('                                                                                                    ')
+			print('                                                                                                    ', end = '\r')
 			print('you: ', end = '')
 			sys.stdout.flush()
 #this starts the sending and recievig on two different threads

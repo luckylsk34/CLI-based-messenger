@@ -42,13 +42,13 @@ def recieving():
 		if n == 0:
 			n = 1
 			w.cursor_adjust(1-pos.X, 0)
-			print('                                                                                                    ')
+			print('                                                                                                    ', end = '\r')
 			print('other:', msg1.decode('ascii'))
 			print('\nyou: ', end = '')
 		else:
 			w.cursor_adjust(1-pos.X, -1)
 			print('other:', msg1.decode('ascii'))
-			print('                                                                                                    ')
+			print('                                                                                                    ', end = '\r')
 			print('you: ', end = '')
 			sys.stdout.flush()
 
