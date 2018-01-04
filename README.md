@@ -3,5 +3,4 @@ a simple implementation of CLI based messenger for 2 people on same LAN network,
 
 **requires colorama to use
 
-future modifications:
-    will make it so that you don't require colorama anymore
+no GUI for this one
